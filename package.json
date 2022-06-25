@@ -1,28 +1,29 @@
 {
-  "name": "pride-campus",
-  "version": "1.0.0",
-  "description": "A discord bot for the LGBTQ+ Community",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OctoplusNinja/Pride-Campus.git"
-  },
-  "keywords": [
-    "LGBTQ+",
-    "Discord Bot"
-  ],
-  "author": "Aniruddha Das, Falguni Sarkar",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/OctoplusNinja/Pride-Campus/issues"
-  },
-  "homepage": "https://github.com/OctoplusNinja/Pride-Campus#readme",
-  "dependencies": {
-    "discord.js": "^13.8.1",
-    "nodemon": "^2.0.18"
-  }
+	"name": "pride-campus",
+	"version": "1.0.0",
+	"description": "Spreading awarness about the LGBTQ+ Community.",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon index.js",
+		"test": "node src/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/OctoplusNinja/Pride-Campus.git"
+	},
+	"keywords": [
+		"LGBTQ+",
+		"Discord Bot"
+	],
+	"author": "Aniruddha Das, Falguni Sarkar",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/OctoplusNinja/Pride-Campus/issues"
+	},
+	"homepage": "https://github.com/OctoplusNinja/Pride-Campus#readme",
+	"dependencies": {
+		"discord.js": "^13.8.1",
+		"dotenv": "^16.0.1",
+		"nodemon": "^2.0.18"
+	}
 }
