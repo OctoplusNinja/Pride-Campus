@@ -1,0 +1,23 @@
+const fs = require('fs');
+
+module.exports = {
+	name: 'interactionCreate.js',
+
+	async execute(interaction, client) {
+		if (!interaction.isCommand()) return;
+
+		const command = client.commands.get(interaction.commandName);
+
+		if (!command) return;
+
+		try {
+			await command.execute(interaction);
+		} catch (error) {
+			console.error(error);
+			await interaction.reply({
+				content: 'There was an error trying to execute that command!',
+				ephemeral: true
+			});
+		}
+	}
+};
