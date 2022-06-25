@@ -1,7 +1,7 @@
 {
 	"name": "pride-campus",
 	"version": "1.0.0",
-	"description": "Spreading awarness about the LGBTQ+ Community.",
+	"description": "Spreading awarness about the LGBTQ+ Community. 🌈",
 	"main": "index.js",
 	"scripts": {
 		"start": "nodemon index.js",
