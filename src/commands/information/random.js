@@ -24,9 +24,9 @@ module.exports = {
 		.setDescription('Replies with a fact! 📝'),
 	async execute(interaction) {
 		const embed = new MessageEmbed()
-			.setColor('#ADCF9F')
+			.setColor('#008121')
 			.setAuthor({
-				name: "Pride Campus' Random Fact",
+				name: 'Random Fact 📝',
 				iconURL: 'https://i.imgur.com/PyReIVN.jpg',
 				url: 'https://github.com/OctoplusNinja/Pride-Campus'
 			})
