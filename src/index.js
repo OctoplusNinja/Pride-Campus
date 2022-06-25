@@ -10,9 +10,7 @@ const functions = fs
 const eventFiles = fs
 	.readdirSync('./src/events')
 	.filter((file) => file.endsWith('.js'));
-const commandFolder = fs
-	.readdirSync('./src/commands')
-	.filter((file) => file.endsWith('.js'));
+const commandFolder = fs.readdirSync('./src/commands');
 
 (async () => {
 	for (const file of functions) {
