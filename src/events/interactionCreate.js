@@ -1,9 +1,10 @@
 const fs = require('fs');
 
 module.exports = {
-	name: 'interactionCreate.js',
+	name: 'interactionCreate',
 
 	async execute(interaction, client) {
+		console.log(`${interaction.user.tag} in #${interaction.channel.name} triggered an interaction.`);
 		if (!interaction.isCommand()) return;
 
 		const command = client.commands.get(interaction.commandName);

@@ -14,7 +14,7 @@ module.exports = (client) => {
 				.filter((file) => file.endsWith('.js'));
 			for (const file of commandFiles) {
 				const command = require(`../commands/${folder}/${file}`);
-				client.commands.set(command.name, command);
+				client.commands.set(command.data.name, command);
 				client.commandArray.push(command.data.toJSON());
 			}
 		}
