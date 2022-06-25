@@ -23,11 +23,15 @@ module.exports = {
             stop_sequences: ["--"],
             return_likelihoods: 'NONE'
         });
+
         let data = response.body.generations[0].text.replace(/\n/g, "").replace("--", "").split("#").filter(d => d !== "");
-        const embed = new MessageEmbed().setTitle("Hashtag").setDescription(`${promt} [#${data[0]}](${encodeURI(`https://twitter.com/intent/tweet?text=${promt}`)})`)
+        const embed = new MessageEmbed().setColor('#FF8D00')
+            .setAuthor({
+                name: '#hashtag',
+                iconURL: 'https://i.imgur.com/PyReIVN.jpg',
+                url: 'https://github.com/OctoplusNinja/Pride-Campus'
+            }).setDescription(`${promt} [#${data[0]}](${encodeURI(`https://twitter.com/intent/tweet?text=${promt}`)})`)
         await interaction.reply({ embeds: [embed] });
         //  reply(`[${promt} # ${data[0]}](https://twitter.com/intent/tweet?text=how%20tf%20you%20still%20alive)`);
     }
 };
-
-{/* <a href="https://twitter.com/intent/tweet?button_hashtag=LoveTwitter&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #LoveTwitter</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> */ }
