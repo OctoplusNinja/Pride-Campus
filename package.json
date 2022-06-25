@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/OctoplusNinja/Pride-Campus#readme",
   "dependencies": {
+    "discord.js": "^13.8.1",
     "nodemon": "^2.0.18"
   }
 }
