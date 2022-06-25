@@ -14,7 +14,7 @@ module.exports = {
 				url: 'https://github.com/OctoplusNinja/Pride-Campus'
 			})
 			.setDescription(
-				'Since being part of communities, we need to be inclusive and diversive in all aspects and also to make new members of communities aware about the same, we created this bot. Happy #pride. 🌈\nMade with ❤️ & #pride by Aniruddha Das and Falguni Sarkar.'
+				'Since being part of communities, we need to be inclusive and diverse in all aspects, and also to make new members of communities aware of the same, we created this bot. Happy #pride. 🌈\nMade with 🤍 & #pride by Aniruddha Das and Falguni Sarkar.'
 			);
 		await interaction.reply({ embeds: [embed] });
 	}
