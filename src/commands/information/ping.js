@@ -1,10 +1,21 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js');
 
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('ping')
-		.setDescription('Replies with pong! 🎾'),
+		.setDescription('Replies with pong! 🏓'),
 	async execute(interaction) {
-		await interaction.reply('Pong! 🎾');
+		const embed = new MessageEmbed()
+			.setColor('#76BA99')
+			.setAuthor({
+				name: 'Ping Pong 🏓',
+				iconURL: 'https://i.imgur.com/PyReIVN.jpg',
+				url: 'https://github.com/OctoplusNinja/Pride-Campus'
+			})
+			.setDescription(
+				`Pong! I\'m alive and spreading love.\nWell, pong again! 🏓`
+			);
+		await interaction.reply({ embeds: [embed] });
 	}
 };
