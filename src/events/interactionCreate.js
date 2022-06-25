@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 module.exports = {
-	name: 'interactionCreate.js',
+	name: 'interactionCreate',
 
 	async execute(interaction, client) {
 		if (!interaction.isCommand()) return;

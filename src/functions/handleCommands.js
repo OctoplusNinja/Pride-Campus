@@ -2,8 +2,8 @@ const fs = require('fs');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 
-const clientId = '990301006652928050';
-const guildId = '844112531815530517';
+const clientId = process.env.clientId;
+const guildId = process.env.guildId;
 
 module.exports = (client) => {
 	client.handleCommands = async (commandFolder, path) => {
@@ -14,7 +14,7 @@ module.exports = (client) => {
 				.filter((file) => file.endsWith('.js'));
 			for (const file of commandFiles) {
 				const command = require(`../commands/${folder}/${file}`);
-				client.commands.set(command.name, command);
+				client.commands.set(command.data.name, command);
 				client.commandArray.push(command.data.toJSON());
 			}
 		}
