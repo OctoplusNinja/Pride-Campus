@@ -74,6 +74,7 @@ We often wanted to explore Discord APIs as well since me and my teammates use Di
 #### Enjoy!
 
 #### Built With:
+- [Co:here AI](https://cohere.ai/)
 - [Discord.js](https://discord.js.org/)
 - [Postman Mock API](https://blog.postman.com/lgbtq-pride-public-workspace-api-community/)
 
