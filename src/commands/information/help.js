@@ -20,6 +20,7 @@ module.exports = {
           value: 'Replies with meaning & orign of LGBTQ+! 🤓'
         },
         { name: '/aboutus', value: "Replies with bot's purpose! 🤓" },
+        { name: '/communities', value: "Replies with bot's purpose! 🤓" },
         {
           name: '/hashtag',
           value: 'Replies with hashtag related to the input! 📢'
@@ -27,6 +28,10 @@ module.exports = {
         { name: '/help', value: 'Replies with list of commands! 🔍' },
         { name: '/ping', value: 'Replies with pong! 🏓' },
         { name: '/random', value: 'Replies with a fact! 📝' },
+        {
+          name: '/stemopportunities',
+          value: 'Replies with list of Stem Opportunities! 🔍'
+        },
         { name: '/whypronoun', value: 'Replies with importance of pronoun! 💻' }
       );
     await interaction.reply({ embeds: [embed] });
