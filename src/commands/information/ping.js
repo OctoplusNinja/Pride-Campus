@@ -7,7 +7,7 @@ module.exports = {
 		.setDescription('Replies with pong! 🏓'),
 	async execute(interaction) {
 		const embed = new MessageEmbed()
-			.setColor('#FFEE00')
+			.setColor('#004CFF')
 			.setAuthor({
 				name: 'Ping Pong 🏓',
 				iconURL: 'https://i.imgur.com/PyReIVN.jpg',
