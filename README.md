@@ -76,7 +76,6 @@ We often wanted to explore Discord APIs as well since me and my teammates use Di
 #### Built With:
 - [Discord.js](https://discord.js.org/)
 - [Postman Mock API](https://blog.postman.com/lgbtq-pride-public-workspace-api-community/)
-- [CircleCI](https://circleci.com/)
 
 ## Made by Blank Coders 💻
 
