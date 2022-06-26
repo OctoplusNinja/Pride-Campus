@@ -1,6 +1,4 @@
-## Welcome to the Pride Campus wiki!
-
-### Pride Campus - Discord Bot.
+# Pride Campus - Discord Bot.
 > Spreading awareness about the LGBTQ+ Community. :rainbow:
 
 [Add to your discord server :globe_with_meridians:](https://discord.com/api/oauth2/authorize?client_id=990301006652928050&permissions=8&scope=bot+applications.commands)
